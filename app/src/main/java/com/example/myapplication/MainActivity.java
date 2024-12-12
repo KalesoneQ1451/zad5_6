@@ -44,14 +44,13 @@ public class MainActivity extends AppCompatActivity {
             }
             polub.setText(count + " polubień");
         });
-        String sprawdzMail = mail.getText().toString().trim();
-        if (!android.util.Patterns.EMAIL_ADDRESS.matcher(sprawdzMail).matches()){
+        if (!mail.getText().toString().trim().contains("@")){
             emails.setText("Nie prawidłowy adres email");
         } else if (pass != repass) {
             emails.setText("Hasła się różnią");
         } else {
             emails.setText("Zarejestrowano " + mail);
-            lastMail = sprawdzMail;
+            lastMail = String.valueOf(mail.getText());
         }
         pokaz.setOnClickListener(view -> {
             emails.setText(lastMail);
