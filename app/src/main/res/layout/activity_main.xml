@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/przywitanie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wydarzenia w sudetach"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:id="@+id/obraz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/widok"
+        tools:layout_editor_absoluteX="-27dp"
+        tools:layout_editor_absoluteY="143dp" />
+    <TextView
+        android:id="@+id/polub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="0 polubień"
+        android:padding="8dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/przcisk1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="polub"
+            android:layout_weight="1"
+            android:backgroundTint="#aaabfa"/>
+        <Button
+            android:id="@+id/przcisk2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="usuń"
+            android:layout_weight="1"
+            android:backgroundTint="#aaabfa"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="email"/>
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/repass"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/zapisz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="zapisz"/>
+    <Button
+        android:id="@+id/pokaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="zobacz uczestnika"/>
+    <TextView
+        android:id="@+id/emails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
